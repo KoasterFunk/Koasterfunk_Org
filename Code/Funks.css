@@ -5,7 +5,7 @@
 /* */
 body {
 	color: white;
-	font-family: Agency FB, Britannic;
+	font-family: Agency FB, Britannic, SF Pro;
 	text-shadow: 0 2px 0 #5E5E5E;
 }
 
@@ -47,4 +47,53 @@ em {
 	margin: auto;
 	border-radius: 20px;
 	border: 5px solid #EB6026;
+}
+
+/*Phone Format*/
+@media screen and (max-width: 450px) {
+			body {
+				color: white;
+				font-family: Agency FB, Britannic;
+				text-shadow: 0 2px 0 #5E5E5E;
+			}
+
+
+
+			p {
+				margin: 0 0 10px;
+				font-size: 20px;
+				line-height: 20px;
+			}
+
+			h1 {
+				text-align: center;
+				margin: 0 0 10px;
+				font-size: 20px;
+				
+			}
+
+			h2 {
+				text-align: center;
+				margin: 0 0 10px;
+				font-size: 15px;
+				line-height: 0px;
+			}
+
+			strong {
+			  font-weight: bold;
+			}
+
+			em {
+			  font-style: italic;
+			  font-size: 18px;
+			  letter-spacing: 2px;
+			}
+
+			.Funkimg {
+				width: 100px;
+				display: block;
+				margin: auto;
+				border-radius: 20px;
+				border: 5px solid #EB6026;
+			}
 }
