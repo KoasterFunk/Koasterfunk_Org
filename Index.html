@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- -->
+<html lang="en">
+  <head>
+	<title>KoasterFunk Incorporated</title>
+	<link rel="icon" href="img/KoasterFunk2.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Caleb Ambrose">
+	<link href="Code/main.css" rel="stylesheet">
+ </head>
+ <body>
+	
+	<div class="container">
+		<div class="row">
+		
+			<!--Left Track-->
+			<div class="L-track">
+				<img src="img/KFI.gif" class="headerimg">
+				<h2>Welcome,<br>Valued Customer</h2>
+					<a href="index.html" class="BT">Home</a><br>
+					<a href="" class="BT">Games</a><br>
+					<a href="" class="BT">Music</a><br>
+					<a href="" class="BT">Work</a><br>
+					<a href="" class="BT">Discord</a><br>
+					<a href="img/blueffy.webp" class="BTB">Blueffy</a><br>
+				
+				
+				
+			</div>
+			
+				<!--Right Track-->
+				<div class="R-track">
+					<img class="headerimgR" src="img/MakeThings.png">
+					<br style = "line-height:10;">
+					<h1>Introduction</h1>
+					<img class="rightimg" src="img/CodingMe.jpg"><br>
+					<p>I am the one they call <strong>Caleb Ambrose</strong>. I could tell you I'm an audio engineer who graduated from MTSU <em>(pending)</em>, I could tell you I'm a game developer of a TTRPG <em>(and more [pending])</em>, I could even tell you I'm a composer <em>(creator of <a target="_blank" href="https://youtu.be/B3NtBJ00QxM?si=eoXfoQ6OiA3KMid6">"Master Of Rime"</a>)</em>, but the only thing I can say in confidence is that I love to make things happen. I love to dabble in just about everything, to a point where I have not mastered anything... Call me the Swiss army knife of random skills, because I'm not the greatest knife but I get the job done <em>(eventually)</em>.</p>
+					<br>
+					<h2>The Incorporation</h2>
+					<p>So what is this, "KoasterFunk Incorporated?" Well I'm glad you asked this question I forced you to have, friend! Here, on a hand coded website <em>(WITH NO AI!!)</em>, I have amalgamated my, and other's, ideas into something whole; into something where I have incorporated concepts into intangible reality. Just in being here, you are a customer of my incorporated mind. You are valued, so thank you. <br><br> Oh and "KoasterFunk" is my online alias, if that was not clear.</p>
+					<br>
+					<div>
+						<h2>The Poster-Funk</h2>
+						<select class="DP" id="fselect" name="fselect">
+							<option value="">--Funk Select--</option>
+						</select>
+						
+						<div class="Funks">
+							<object id="funk-frame" width="500" height="500"></object>
+						</div>
+						
+						<script>
+							const select = document.getElementById('fselect')
+							const frame = document.getElementById('funk-frame')
+							
+							fetch('../Funks/Funks.json')
+								.then(response => response.json())
+								.then(files => {
+								
+									files.forEach(filename => {
+										const option = document.createElement('option');
+										option.value = '../Funks/' + filename;
+										option.textContent = filename;
+										option.textContent = filename
+											.replace('.html','')
+											.replace(/-/g, ' ');
+										select.appendChild(option);
+									});
+								});
+								
+							select.addEventListener('change', () => {
+								frame.data = select.value;
+							});
+						</script>
+						
+					</div>
+					
+					<br style = "line-height:30;">
+					<p>I once knew a sound engineer from china and a czech one too.</p>
+					
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container">
+		<div class="row">
+			
+		</div>
+	</div>
+ </body>
