@@ -3,13 +3,32 @@
 
 
 /* */
+body {
+	color: white;
+	font-family: Agency FB, Britannic;
+	text-shadow: 0 2px 0 #5E5E5E;
+}
+
+
+
 p {
 	margin: 0 0 10px;
 	font-size: 27px;
-	color: white;
-	font-family: Agency FB;
 	line-height: 30px;
-	text-shadow: 0 2px 0 #5E5E5E;
+}
+
+h1 {
+	text-align: center;
+	margin: 0 0 10px;
+	font-size: 30px;
+	
+}
+
+h2 {
+	text-align: center;
+	margin: 0 0 10px;
+	font-size: 15px;
+	line-height: 0px;
 }
 
 strong {
@@ -18,6 +37,14 @@ strong {
 
 em {
   font-style: italic;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 2px;
+}
+
+.Funkimg {
+	width: 450px;
+	display: block;
+	margin: auto;
+	border-radius: 20px;
+	border: 5px solid #EB6026;
 }
