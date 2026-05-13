@@ -1,0 +1,23 @@
+/* */
+
+
+
+/* */
+p {
+	margin: 0 0 10px;
+	font-size: 27px;
+	color: white;
+	font-family: Agency FB;
+	line-height: 30px;
+	text-shadow: 0 2px 0 #5E5E5E;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
