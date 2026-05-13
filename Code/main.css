@@ -3,7 +3,7 @@
 
 body {
   -webkit-font-smoothing: none;
-  background: #0000ff url('../img/KFIBG.jpg') top left;
+  background: #1159AB url('../img/KFIBG.jpg') top left;
   background-attachment: fixed;
   background-size: 175px;
   
@@ -11,15 +11,15 @@ body {
 
 body {
   margin: 0;
-  font-family: Magneto, Britannic, "Chiller", "Harlow Solid";
+  font-family: Magneto, Britannic, "Chiller", "Harlow Solid", SF Pro;
   font-size: 16px;
   line-height: 20px;
   color: 000000;
-  background-color: #0000ff;
+  background-color: #1159AB;
 }
 
 
-/* */
+/*Text*/
 p {
   margin: 0 0 10px;
   font-size: 27px;
@@ -125,7 +125,10 @@ footer {
 			border: 15px solid #F0F0F0;
 			height: 1750px;
 		}
-		
+.R-Space {
+	translate: 0px 190px;
+}
+
 		
 /* Image */
 
@@ -161,6 +164,11 @@ footer {
 	margin: auto;
 	border: 5px solid #1159AB;
 
+}
+
+.FunkFrame {
+	width: 500px;
+	height: 500px;
 }
 
 	
@@ -228,3 +236,227 @@ footer {
 	margin: auto;
 	display: block;
 }
+
+
+/* Phone Format */
+@media screen and (max-width: 980px) {
+			/*Body*/
+			body {
+			background: #1159AB url('../img/KFIBG.jpg') top left;
+			}
+			
+			/*Text*/
+			p {
+			  margin: 0 0 10px;
+			  font-size: 20px;
+			  font-family: Agency FB, Britannic;
+			  line-height: 20px;
+			  text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+			}
+
+			strong {
+			  font-weight: bold;
+			}
+
+			em {
+			  font-style: italic;
+			  font-size: 20px;
+			  letter-spacing: 2px;
+			}
+
+			h1,
+			h2,
+			h3
+			{
+			  margin: 10px 0;
+			  font-family: inherit;
+			  font-weight: bold;
+			  line-height: 20px;
+			  color: #010124;
+			  text-rendering: optimizelegibility;
+			  text-shadow:
+							  0px 1px 0px white,
+							  -2px -2px 0px white,
+							  0px 0px 5px #03033B,
+							  0 2px 0 rgb(0 0 0 / 25%);
+			  letter-spacing: 1.5px;
+			  text-align: center;
+			  
+			}
+
+			h1,
+			h2,
+			h3 {
+			  line-height: 15px;
+			}
+
+			h1 {
+			  font-size: 20px;
+			}
+
+			h2 {
+			  font-size: 15px;
+			}
+
+			h3 {
+			  font-size: 25px;
+			}
+
+			h4 {
+			  font-size: 25px;
+			  text-shadow: 2px 2px 5px #ff0000;
+			  letter-spacing: 5px;
+			}
+
+			h5 {
+			  font-size: 10px;
+			  line-height: 5px;
+			  text-decoration: underline;
+			}
+
+			h6 {
+			  font-size: 5px;
+			  line-height: 5px;
+			}
+
+
+
+			/* Container */
+			.container {
+					width: 180px;
+					display: table;
+					margin: auto;
+				}
+
+
+			/* Row */
+			.row {
+					display: flex;	
+				}
+				
+				.row > .L-track {
+						width: 21%;
+						background-color: #E8E8E8;
+						border: 15px solid #E8E8E8;
+						height: 1400px;
+					}
+					
+				.row > .R-track {
+						width: 52.7%;
+						background-color: #F0F0F0;
+						border: 15px solid #F0F0F0;
+						height: 1400px;
+					}
+					
+			.R-Space {
+				translate: 0px 40px;
+			}
+					
+			/* Image */
+
+			.headerimg {
+				width:105px;
+				height: auto;
+				translate: -15px -15px;
+				}
+
+			.headerimgR {
+				position: absolute;
+				translate: -15px -15px;
+				width: 217.5px;
+				height: auto;
+				}
+
+			.rightimg {
+				width: 170px;
+				height: auto;
+				border: 5px black;
+				display: block;
+				margin: auto;
+				
+			}
+
+			/*The Poster Funk*/
+
+			.Funks {
+				display: block;
+				background-color: #333333;
+				width:  180px;
+				height: 180px;
+				margin: auto;
+				border: 5px solid #1159AB;
+			}
+
+			.FunkFrame {
+				display: block;
+				width: 180px;
+				height: 180px;
+			}
+
+				
+
+
+			/* Buttons */
+
+			.BT {
+				font-size: 20px;
+				overflow: visible;
+				text-decoration: none;
+				text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+				text-indent: 0px;
+				
+				
+				display: inline grid;
+				color: #010124;
+				background-color: #EB6026;
+				border-radius: 50%;
+				justify-content: center;
+				padding: 1.0rem 1.5rem;
+				white-space: unset;
+				
+				
+				width: 15px;
+				height: auto;
+				margin: 3px;
+				}
+
+			.BT:hover {
+				box-shadow: 0px 0px 5px 5px #A3A3A3;
+				text-decoration: underline;
+				text-shadow: 0px 0px 5px white;
+				}
+				
+			.BTB {
+				font-size: 20px;
+				overflow: visible;
+				text-decoration: none;
+				text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+				text-indent: 0px;
+				
+				
+				display: inline grid;
+				color: #010124;
+				background-color: #1159AB;
+				border-radius: 50%;
+				justify-content: center;
+				padding: 1.0rem 1.5rem;
+				white-space: unset;
+				
+				
+				width: 15px;
+				height: auto;
+				margin: 3px;
+				}
+
+			.BTB:hover {
+				box-shadow: 0px 0px 5px 5px #A3A3A3;
+				text-decoration: underline;
+				text-shadow: 0px 0px 5px white;
+				}
+				
+			.DP {
+				margin: auto;
+				display: block;
+			}
+}
+
