@@ -268,7 +268,7 @@ footer {
 			h2,
 			h3
 			{
-			  margin: 10px 0;
+			  margin: 5px -5px;
 			  font-family: inherit;
 			  font-weight: bold;
 			  line-height: 20px;
@@ -315,17 +315,21 @@ footer {
 			}
 
 			h6 {
-			  font-size: 5px;
-			  line-height: 5px;
+			  font-size: 9px;
+			  line-height: 10px;
+			  margin: 5px -10px;
+			  word-wrap: break-word;
 			}
 
 
 
 			/* Container */
 			.container {
-					width: 180px;
+					width: 0px;
+					max-width: 100px;
 					display: table;
-					margin: auto;
+					margin: 0 auto;
+					
 				}
 
 
