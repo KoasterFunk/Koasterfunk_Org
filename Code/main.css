@@ -1,5 +1,13 @@
 /* */
+@font-face{
+	font-family: Agency FB;
+	src: url(Fonts/agencyfb_bold.ttf);
+}
 
+@font-face{
+	font-family: Magneto;
+	src: url(Fonts/magneto-bold.ttf);
+}
 
 body {
   -webkit-font-smoothing: none;
@@ -20,6 +28,7 @@ body {
 
 
 /*Text*/
+
 p {
   margin: 0 0 10px;
   font-size: 27px;
@@ -309,13 +318,13 @@ footer {
 			}
 
 			h5 {
-			  font-size: 10px;
+			  font-size: 12px;
 			  line-height: 5px;
 			  text-decoration: underline;
 			}
 
 			h6 {
-			  font-size: 9px;
+			  font-size: 12px;
 			  line-height: 10px;
 			  margin: 5px -10px;
 			  word-wrap: break-word;
@@ -325,31 +334,39 @@ footer {
 
 			/* Container */
 			.container {
-					width: 0px;
-					max-width: 100px;
-					display: table;
+					width: 100px;
+					max-width: 100%;
+					display: flex;
 					margin: 0 auto;
+					align-items: center;
+					flex-direction: column;
+					height: 100%;
+					justify-content: center;
+					translate: 33px;
+					
+					
 					
 				}
-
+			
 
 			/* Row */
 			.row {
-					display: flex;	
+					display: flex;
+					
 				}
 				
 				.row > .L-track {
-						width: 21%;
+						width: 19.3%;
 						background-color: #E8E8E8;
 						border: 15px solid #E8E8E8;
-						height: 1400px;
+						height: 1800px;
 					}
 					
 				.row > .R-track {
-						width: 52.7%;
+						width: 48%;
 						background-color: #F0F0F0;
 						border: 15px solid #F0F0F0;
-						height: 1400px;
+						height: 1800px;
 					}
 					
 			.R-Space {
@@ -359,9 +376,10 @@ footer {
 			/* Image */
 
 			.headerimg {
-				width:105px;
+				width:105.5px;
 				height: auto;
-				translate: -15px -15px;
+				translate: -15.5px -15px;
+				
 				}
 
 			.headerimgR {
@@ -369,6 +387,7 @@ footer {
 				translate: -15px -15px;
 				width: 217.5px;
 				height: auto;
+				
 				}
 
 			.rightimg {
