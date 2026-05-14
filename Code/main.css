@@ -319,7 +319,7 @@ footer {
 
 			h5 {
 			  font-size: 12px;
-			  line-height: 5px;
+			  line-height: 12px;
 			  text-decoration: underline;
 			}
 
@@ -376,7 +376,7 @@ footer {
 			/* Image */
 
 			.headerimg {
-				width:105.5px;
+				width:107.5px;
 				height: auto;
 				translate: -15.5px -15px;
 				
@@ -385,7 +385,7 @@ footer {
 			.headerimgR {
 				position: absolute;
 				translate: -15px -15px;
-				width: 217.5px;
+				width: 221px;
 				height: auto;
 				
 				}
