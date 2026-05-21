@@ -351,7 +351,20 @@ footer {
 			  word-wrap: break-word;
 			}
 
+			/*Embed*/
+			.embed {
+				width: 100%;
+				height: 750px;
+				zoom: 15%;
+	
+}
 
+			.embed2 {
+				width: 100%;
+				height: 550px;
+				zoom: 50%;
+	
+}
 
 			/* Container */
 			.container {
