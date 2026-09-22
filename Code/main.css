@@ -181,6 +181,22 @@ footer {
 	
 }
 
+.rightimgL {
+	width: 500px;
+	height: auto;
+	border: 5px black;
+	display: block;
+	margin: auto;
+}
+
+.rightimgXL {
+	width: 580px;
+	height: auto;
+	border: 5px black;
+	display: block;
+	margin: auto;
+}
+
 /*The Poster Funk*/
 
 .Funks {
@@ -430,6 +446,22 @@ footer {
 				display: block;
 				margin: auto;
 				
+			}
+
+			.rightimgL {
+				width: 200px;
+				height: auto;
+				border: 5px black;
+				display: block;
+				margin: auto;
+			}
+
+			.rightimgXL {
+				width: 230px;
+				height: auto;
+				border: 5px black;
+				display: block;
+				margin: auto;
 			}
 
 			/*The Poster Funk*/
