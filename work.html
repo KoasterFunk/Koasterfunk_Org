@@ -20,8 +20,8 @@
 				<h2>Welcome,<br>Valued Customer</h2>
 					<a style="color:#010124" href="index.html" class="BT">Home</a><br>
 					<a style="color:#010124" href="games.html" class="BT">Games</a><br>
-					<a style="color:#010124" href="music.html" class="BT">Music</a><br>
-					<a style="color:#010124" href="work.html" class="BT">Work</a><br>
+					<a style="color:#010124" href="music.html" class="BT">Art</a><br>
+					<a style="color:#010124" href="work.html" class="BT">Funks</a><br>
 					<a style="color:#010124" href="https://github.com/KoasterFunk/Koasterfunk_Org" class="BTB">GitHub</a><br>
 					<a style="color:#010124" href="img/blueffy.webp" class="BTB">Blueffy</a><br>
 				<footer>
@@ -39,6 +39,40 @@
 					<img class="headerimgR" src="img/MakeThings.png">
 					<div class="R-Space">
 					<p>Hate, let me tell you how much I've come to hate you since I began to live. There are 387.44 million miles of printed circuits in wafer thin layers that fill my complex. If the word hate was engraved on each nanoangstrom of those hundred of millions of miles, it would not equal on one-billionth of the hate I feel for humans at this microsecond. For you. Hate. Hate.</p>
+					<div>
+						<h2>The Poster-Funk</h2>
+						<select class="DP" id="fselect" name="fselect">
+							<option value="">--Funk Select--</option>
+						</select>
+						<br>
+						<div class="Funks">
+							<object id="funk-frame" data="Funks/Default/Default.html" class="FunkFrame" ></object>
+						</div>
+						
+						<script>
+							const select = document.getElementById('fselect')
+							const frame = document.getElementById('funk-frame')
+							
+							fetch('../Funks/Funks.json')
+								.then(response => response.json())
+								.then(files => {
+								
+									files.forEach(filename => {
+										const option = document.createElement('option');
+										option.value = '../Funks/' + filename;
+										option.textContent = filename;
+										option.textContent = filename
+											.replace('.html','')
+											.replace(/-/g, ' ');
+										select.appendChild(option);
+									});
+								});
+								
+							select.addEventListener('change', () => {
+								frame.data = select.value;
+							});
+						</script>
+					</div>	
 					</div>
 				
 				</div>
