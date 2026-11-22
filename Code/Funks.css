@@ -49,6 +49,14 @@ em {
   letter-spacing: 2px;
 }
 
+a:link {
+	color: MidnightBlue;
+}
+
+a:visited {
+	color: OrangeRed;
+}
+
 .Funkimg {
 	width: 450px;
 	display: block;
