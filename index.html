@@ -19,9 +19,9 @@
 				<img src="img/KFI.gif" class="headerimg">
 				<h2>Welcome,<br>Valued Customer</h2>
 					<a style="color:#010124" href="index.html" class="BT">Home</a><br>
-					<a style="color:#010124" href="games.html" class="BT">Games</a><br>
-					<a style="color:#010124" href="music.html" class="BT">Music</a><br>
-					<a style="color:#010124" href="work.html" class="BT">Work</a><br>
+					<a style="color:#010124" href="dGames/Games1.html" class="BT">Games</a><br>
+					<a style="color:#010124" href="dWorks/Works1.html" class="BT">Works</a><br>
+					<a style="color:#010124" href="Funks.html" class="BT">Funks</a><br>
 					<a style="color:#010124" href="https://github.com/KoasterFunk/Koasterfunk_Org" class="BTB">GitHub</a><br>
 					<a style="color:#010124" href="img/blueffy.webp" class="BTB">Blueffy</a><br>
 				<footer>
@@ -38,49 +38,31 @@
 				<div class="R-track">
 					<img class="headerimgR" src="img/MakeThings.png">
 					<div class="R-Space">
-					<h1>Introduction</h1>
-					<img class="rightimg" src="img/MeSayingMe.jpg"><br>
-					<p>I am the one they call <a href="AboutMe.html"><strong>Caleb Ambrose</strong></a>. I could tell you I'm an audio engineer who graduated from MTSU <em>(pending)</em>, I could tell you I'm a game developer of a TTRPG <em>(and more [pending])</em>, I could even tell you I'm a composer <em>(creator of <a target="_blank" href="https://youtu.be/B3NtBJ00QxM?si=eoXfoQ6OiA3KMid6">"Master Of Rime"</a>)</em>, but the only thing I can say in confidence is that I love to make things happen. I love to dabble in just about everything, and it is my goal to encourage others to do the same!</p>
-					<br>
-					<h2>The Incorporation</h2>
-					<p>So what is this, "KoasterFunk Incorporated?" Well I'm glad you now have this question, friend! Here, on my website, I have amalgamated my, and other's, ideas into something whole. Just in being here, you are a customer of my incorporated mind. You are valued, so thank you. <br><br>
-					
-					If you have more questions (or want more), I have a <a href="Questions.html">place</a> for that my friend...</p>
-					<br>
-					<div>
-						<h2>The Poster-Funk</h2>
-						<select class="DP" id="fselect" name="fselect">
-							<option value="">--Funk Select--</option>
-						</select>
-						<br>
-						<div class="Funks">
-							<object id="funk-frame" data="Funks/Default/Default.html" class="FunkFrame" ></object>
-						</div>
-						
-						<script>
-							const select = document.getElementById('fselect')
-							const frame = document.getElementById('funk-frame')
+						<h1>Introduction</h1>
+							<img class="rightimg" src="img/MeSayingMe.jpg"><br>
+							<p>I am the one they call <a href="AboutMe.html"><strong>(Caleb) Ambrose</strong></a>. I could tell you I'm an audio engineer who graduated from MTSU <em>(pending)</em>, I could tell you I'm a game developer of a TTRPG <em>(and more [pending])</em>, I could even tell you I'm a composer <em>(creator of <a target="_blank" href="https://youtu.be/B3NtBJ00QxM?si=eoXfoQ6OiA3KMid6">"Master Of Rime"</a>)</em>, but the only thing I can say in confidence is that I love to make things happen. I love to dabble in just about everything, and it is my goal to encourage others to do the same!</p>
+							<br>
 							
-							fetch('../Funks/Funks.json')
-								.then(response => response.json())
-								.then(files => {
-								
-									files.forEach(filename => {
-										const option = document.createElement('option');
-										option.value = '../Funks/' + filename;
-										option.textContent = filename;
-										option.textContent = filename
-											.replace('.html','')
-											.replace(/-/g, ' ');
-										select.appendChild(option);
-									});
-								});
-								
-							select.addEventListener('change', () => {
-								frame.data = select.value;
-							});
-						</script>
-					</div>	
+						<h2>The Incorporation</h2>
+							<p>So what is this, "KoasterFunk Incorporated?"</p>
+							<p>Here, on my website, I have amalgamated my, and other's, ideas into something whole. Just in being here, you are a customer of my incorporated mind. You are valued, so thank you.</p>
+							<p>We are also against the use of generative AI here.</p>
+							<p>Any more <a href="zSecret/Questions.html">questions?</a></p>
+							<br>
+							
+						<h1>More About Me</h1>
+						<h4>10/4/2026</h4>
+						<img class="rightimg" src="img/CodingMe.jpg">
+							<p>If you meet me out in the field, I’ll likely tell you to call me “Ambrose.” This is my last name, but it’s the name I recognize best. I am personally not very fond of my first name being so common, so after experiencing 2 years of JROTC in high school, I started using my last name like my first. You can also call me Koaster if you really want to freak me out one day -- that’s my online alias.</p><br>
+					
+						<h2>Schooling</h2>
+							<p>I originally hated school before college. I thought I was bad at learning and that generated a lot of self-hatred towards myself. Funnily enough, it was Covid that brought me out of my depressive state. When classes suddenly got lenient and online based, I realized the only reason why I was not as great as I wanted to be was because I was burnt out from how the school wanted me to learn. It clicked with me that my school was trying to teach a fish how to climb a tree. I had to teach myself how to swim.</p>
+							<p>Now I’m about to graduate MTSU with a bachelor’s in audio production.</p><br>
+					
+						<h2>Career</h2>
+							<p>I may call myself an audio technician, but I am much more than that. I’m a curious creator, and my attention is always shifting from one idea to the next. Funny enough, this exact blessing was the reason why I hated myself! I have trouble sticking to one thing, for my mind always wants to do something new -- even if the new thing is harder. I love to push limits and see what’s possible. I cannot shackle myself to what works, for I feel the need to test if we are complacent in mediocrity.</p>
+							<p>So what does that mean for me? What am I?</p><br>
+							<p>I’m <strong>The Fool</strong>, and I wouldn’t have it any other way…</p>
 					</div>
 					
 			</div>
